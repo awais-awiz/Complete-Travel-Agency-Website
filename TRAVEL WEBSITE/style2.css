@@ -1,0 +1,472 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    font-family: 'Crimson Pro', serif;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background: url('img/header-bg.png' )center center/cover;
+    height: 100vh;
+    width: 100%; 
+}
+
+/* General  */
+h1{
+    font-size: 4rem;
+}
+p{
+    text-align: left;
+    color: rgb(99, 99, 99);
+    font-size: 2rem ;
+}
+
+/* Navbar */
+nav{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 2rem; 
+}
+nav .navlogo h2{
+    margin-left: 3.5rem;
+    color: #fff;
+}
+nav .navopt{
+    margin-right: 6rem;
+}
+nav .navopt ul 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+nav .navopt ul li{
+    padding: 0.9rem 1.5rem;
+}
+nav .navopt ul li a{
+    text-decoration: none;
+    padding: 0.5rem 2.5rem;
+    color: #fff;
+    transition: 0.5s;
+}
+nav .navopt ul li a:hover{
+   background: #fc036b;
+   border-radius: 2rem;
+}
+
+/* section in header tag   */
+
+section.content
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    width: 50%;
+    height: 50%;
+}
+section.content .sec-cont
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 50%;
+}
+section.content .sec-cont h3{
+    position: relative;
+    font-size: 2.4rem;
+}
+section.content .sec-cont h3::after{
+   content: "";
+   position: absolute;
+   top: 3.6rem;
+   left: 5.5rem;
+   background-color: #fc036b;
+   width: 17rem;
+   height: 0.5rem;
+   border-radius: 10px;
+}
+section.content .sec-cont h1{
+    
+    margin-top: 3rem;
+}
+button{
+    color: #fff;
+    background: #fc036b;
+    border: 2px solid #fc036b;
+    border-radius: 1.5rem;
+    padding: 0.7rem 2rem;
+    font-size: 1.5rem;
+}
+
+button:hover
+{    border: 2px solid #fff;
+     background-color:#fff;
+     color: #fc036b;
+     transition: 0.4s;
+     cursor: pointer;
+}
+
+
+
+/* section page2 */
+
+section.p2
+{
+     height: 100%;
+     margin-bottom: 2rem;
+}
+section.page2 h2{
+    text-align: center;
+    font-size: 3.5rem;
+    padding-top: 5rem;
+    color: rgb(73,71,118);
+}
+
+/* 
+here we have two column in row 
+1.)Column/ column1
+2.)Coulmn/ column2 */
+
+section.page2 .row
+{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+}
+section.page2 .row .column{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    margin-top: 1rem;
+}
+section.page2 .row .column .column-cont
+{
+    width: 75%;
+    margin-top: 2.5rem;
+}
+section.page2 .row .column p{
+    text-align: left;
+    color: rgb(99, 99, 99);
+    width: 85%;
+    font-size: 2rem ;
+    margin:0.7rem auto;
+}
+section.page2 .row .column h4{
+    color: aqua;
+    width: 80%;
+    margin: auto;
+    font-size: 2.7rem;
+    color: rgb(73,71,118);
+    text-align: center;
+}
+
+/* this is targeting image box  */
+section.page2 .row .column .image
+{
+    width: 47.5rem;
+   height: 32.5rem;
+}
+
+/* this is targeting img tag inside image box  */
+section.page2 .row .column img{
+   width: 47.5rem;
+   height: 32.5rem;
+}
+
+section.page2 .row .column img:hover{
+   width: 50rem;
+   height: 35rem;
+   transition: 0.5s;
+}
+
+
+section.page2 button{
+    margin: auto;
+    display: block;
+    margin-top: 3rem;
+}
+
+
+/* section page3 */
+
+section.p3
+{
+    background: url('img/bg2.png') center center/cover;
+    object-fit: contain;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+/* .p3 has image while content in .page3 ( which is nested in .p3) */
+
+section.p3 .page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100%; 
+    width: 70%;
+}
+section.p3 .page3 h1{
+            font-size: 5rem;
+            color: #fff;
+            position: relative;
+}
+section.p3 .page3 h1::after{
+
+       content: "";
+       position: absolute;
+       top: 6rem;
+       left: 10rem;
+       width: 20rem;
+       height: 0.3rem;
+       background-color: #fc036b;
+       
+
+}
+section.p3 .page3 p{
+            font-size: 2rem;
+            margin-top: 1.6rem;
+            margin-bottom: 1rem;
+            color: #fff;
+            text-align: left;
+            width: 60%;
+}
+    section.p3 .page3 button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+}
+
+
+/* section4 */
+.p4
+{
+    color: rgb(73,71,118);
+}
+.p4 .p4-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* Here row have two column 
+1.).col-1
+2.).column */
+
+.p4 .p4-row .column {
+    width: 76%;
+    height: 90%;
+    display:flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.p4 .p4-row .column li{
+    display: inline-block;
+    margin: 2rem;
+    
+}
+
+.p4 .p4-row .column li img{
+    width: 100%;
+    height: 100%;
+}
+
+.col-1{
+    margin: auto;
+}
+.col-1 h1{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.col-1 h1::after{
+    position: absolute;
+    content: "";
+    top: 9rem;
+    left:0rem;
+    width: 17rem;
+    height: 0.5rem;
+    background-color: #fc036b;
+    margin: auto;
+    border-radius: 2.5rem;
+}
+
+.col-1 p
+{
+    width: 80%;
+    display: block;
+    margin: 2rem auto;
+
+}
+.col-1 button{
+    display: block;
+    margin: auto;
+}
+
+.p4-row .column li img:hover {
+    width: 110%;
+    height: 110%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* Footer  */
+
+footer{
+    background-color: rgb(73,71,118);
+    height: 100%;
+    width: 100%;
+
+}
+footer .foot-row{
+    padding-top: 1.5rem ;
+    padding-bottom: 1.5rem ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.foot-row .navlogo h2{
+    color: #fff;
+    font-size: 2rem;
+}
+footer svg{
+    height: 6rem;
+    width: 5rem;
+}
+
+
+        /* MEDIA QUERIES */
+
+@media(max-width:1444px)
+{
+    .p4-row{
+        flex-direction: column;
+    }
+    .col-1{
+        
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .col-1 h1::after{
+        position: absolute;
+        content: "";
+        top: 5rem;
+        left:25rem;
+        width: 21rem;
+        height: 0.5rem;
+        background-color: #fc036b;
+        margin: auto;
+        border-radius: 2.5rem;
+    }
+}
+@media(max-width:1099px ) {
+  
+        html{font-size:55%;} 
+}
+
+
+
+@media(max-width:999px)  { 
+   
+         html{font-size:50%; } 
+ }
+
+@media(max-width:860px)  { 
+    
+    html{font-size:45%; } 
+}
+
+
+
+@media( max-width:777px) { 
+   
+    html{font-size: 40%; }
+    nav{
+        flex-direction: column;
+        justify-content: center;
+        
+       }
+       nav .navopt{
+        padding-top: 1rem;
+       }
+
+    }
+
+
+@media( max-width: 699px) {
+    
+    html{
+        font-size: 35%;
+    }
+.row{
+    flex-direction: column;
+    }  
+}
+
+@media( max-width: 600px) { 
+
+    html{
+        font-size: 30%;
+    } 
+ }
+
+
+@media( max-width: 510px) {
+
+     html{
+        font-size: 25%;
+    }  
+}
+
+@media( max-width: 450px) { 
+
+    html{
+        font-size: 20%;
+    }  
+}
+@media( max-width: 280px) 
+{ 
+      section.page2 .row .column
+     {
+       flex-wrap: wrap;
+       }
+
+}
+@media( max-width: 260px) 
+{ 
+    html{
+        font-size: 15%;
+    }  
+}
+
+
